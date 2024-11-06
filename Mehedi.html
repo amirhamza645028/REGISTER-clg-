@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <link rel="stylesheet" href="Amirhamza.css">
+</head>
+<body>
+
+<div class="form-container">
+    <h1 class="Register">Register Form</h1>
+    <form action="#" method="post">
+        <!-- Name Fields -->
+        <div class="name-section">
+            <div class="input-box ">
+                <label class="" for="firstName ">First Name</label>
+                <input class="" id="firstName" type="text" placeholder="Write Your First Name" required>
+            </div>
+            <div class="input-box">
+                <label for="lastName">Last Name</label>
+                <input id="lastName" type="text" placeholder="Write Your Last Name">
+            </div>
+        </div>
+
+        <!-- Other Fields -->
+        <div class="input-box">
+            <label for="studentID">Student ID</label>
+            <input id="studentID" type="text" placeholder="Write Your ID">
+        </div>
+        <div class="input-box">
+            <label for="fathersName">Father <span class="Register">'</span> s Name</label>
+            <input id="fathersName" type="text" placeholder="Write Your Father's Name">
+        </div>
+        <div class="input-box">
+            <label for="mothersName">Mother <span class="Register">'</span>s Name</label>
+            <input id="mothersName" type="text" placeholder="Write Your Mother's Name">
+        </div>
+
+        <!-- Address Fields -->
+        <div class="input-box">
+            <label for="presentAddress">Present Address</label>
+            <input id="presentAddress" type="text" placeholder="Write Your Present Address">
+        </div>
+        <div class="input-box">
+            <label for="permanentAddress">Permanent Address</label>
+            <input id="permanentAddress" type="text" placeholder="Write Your Permanent Address">
+        </div>
+
+        <!-- Marital Status, NID, and Email -->
+        <div class="input-box">
+            <label>Marital Status</label>
+            <input type="radio" class="Register" name="maritalStatus" id="married"><label for="married">Married</label>
+            <input type="radio" class="red" name="maritalStatus" id="unmarried"><label for="unmarried">Unmarried</label>
+        </div>
+        <div class="input-box">
+            <label for="nid">NID</label>
+            <input id="nid" type="text" placeholder="Write Your NID No.">
+        </div>
+        <div class="input-box">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Write Your Email">
+        </div>
+
+        <!-- Password and Phone Number -->
+        <div class="input-box">
+            <label for="password">Password</label>
+            <input id="password" type="password" placeholder="Write Your Password">
+        </div>
+        <div class="input-box">
+            <label for="cellNumber">Cell Number</label>
+            <input id="cellNumber" type="text" placeholder="Write Your Cell Number">
+        </div>
+
+        <!-- Date of Birth -->
+        <div class="input-box">
+            <label for="dob">Date of Birth</label>
+            <div class="dob-selectors">
+                <select>
+                    <option>Date</option>
+                    <!-- Dates here -->
+                </select>
+                <select>
+                    <option>Month</option>
+                    <!-- Months here -->
+                </select>
+                <select>
+                    <option>Year</option>
+                    <!-- Years here -->
+                </select>
+            </div>
+        </div>
+
+        <!-- Gender and Nationality -->
+        <div class="input-box">
+            <label>Gender</label>
+            <input type="radio" name="gender" id="male"><label for="male">Male</label>
+            <input type="radio" name="gender" id="female"><label for="female">Female</label>
+        </div>
+        <div class="input-box">
+            <label for="nationality">Nationality</label>
+            <select id="nationality">
+                <option>Select Your Country</option>
+                <option>Bangladesh</option>
+                <!-- Other options -->
+            </select>
+        </div>
+
+        <!-- Color Preference -->
+        <div class="input-box">
+            <label>Favorite Colors</label>
+            <input type="checkbox" id="color1"><label for="color1">White</label>
+            <!-- Other colors -->
+        </div>
+
+        <!-- About Yourself -->
+        <div class="input-box">
+            <label for="about">About Yourself</label>
+            <textarea id="about" placeholder="Write About Yourself"></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit">Sign Up</button>
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('https://i.ibb.co.com/ysQgZdk/image-1.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form-container {
+    width: 90%;
+    max-width: 500px;
+    background-color: rgba(255, 255, 255, 0.041);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.164);
+    text-align: center;
+}
+
+.form-container h2 {
+    margin-bottom: 15px;
+    color: #05beec;
+}
+
+.input-box {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-box label {
+    display: block;
+    margin-bottom: 5px;
+    color: #f4f8032f;
+}
+
+.input-box input[type="text"],
+.input-box input[type="password"],
+.input-box input[type="email"],
+.input-box select,
+.input-box textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #fdf902;
+    border-radius: 4px;
+    transition: border 0.3s ease;
+}
+
+.input-box input[type="text"]:hover,
+.input-box input[type="password"]:hover,
+.input-box input[type="email"]:hover,
+.input-box select:hover,
+.input-box textarea:hover {
+    border-color: #007bff;
+}
+
+.input-box select,
+.input-box textarea {
+    resize: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #ffffff04;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.dob-selectors {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dob-selectors select {
+    width: 32%;
+}
+
+.name-section {
+    display: flex;
+    gap: 10px;
+}
+
+.name-section .input-box {
+    flex: 1;
+}
+.Register{
+    color: rgb(0, 17, 255);
+    
+}
+.red{
+    color: crimson;
+}
+.input-box label {
+    color: #333333; /* Dark gray */
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 600px) {
+    .form-container {
+        width: 95%;
+        padding: 15px;
+    }
+    
+    .name-section {
+        flex-direction: column;
+    }
+
+    .dob-selectors select {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
